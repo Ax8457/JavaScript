@@ -1,7 +1,7 @@
 const net = require("net");
 const { spawn } = require("child_process");
 
-const host = "50.0.0.130"; 
+const host = "127.0.0.1"; 
 const port = 4444;              
 
 function connect() {
